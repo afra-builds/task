@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 30px;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+#loading,
+#errorMessage {
+    text-align: center;
+    margin: 15px 0;
+}
+#errorMessage {
+    color: red;
+}
+#userList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.user-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.user-card h3 {
+    color: #4c4597;
+    margin-bottom: 12px;
+}
+.user-card p {
+    color: #555;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+.delete-btn {
+    background-color: #196284;
+    color: white;
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background-color: #3a79bc;
+}
